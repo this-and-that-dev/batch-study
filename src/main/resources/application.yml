@@ -1,16 +1,22 @@
 spring:
   application:
-    name: golosseum
+    name: batch-study
   batch:
     job:
       enabled: false
+    jdbc:
+      initialize-schema: always #배치테이블을 생성할건지
+      #schema: 스프링에는 연결된 db 에 따라 알아서 sql을 실행해주지만 spring.batch.jdbc.schema 를 통해  직접 연결을 할수 있다.
+  h2:
+    console:
+      enabled: true
   datasource-meta:
     driver-class-name: org.h2.Driver
-    url: 'jdbc:h2:tcp://localhost:9092/~/meta_db'
+    jdbc-url: 'jdbc:h2:mem:meta_db'
     username: sa
     password:
   datasource-data:
     driver-class-name: org.h2.Driver
-    url: 'jdbc:h2:tcp://localhost:9092/~/data_db'
+    jdbc-url: 'jdbc:h2:mem:data_db'
     username: sa
     password:

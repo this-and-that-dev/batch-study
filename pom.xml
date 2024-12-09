@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>kr.co</groupId>
-	<artifactId>golosseum</artifactId>
+	<groupId>spring.batch</groupId>
+	<artifactId>study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>golosseum</name>
-	<description>Crawling project  for Golosseum</description>
+	<name>study</name>
+	<description>study</description>
 	<url/>
 	<licenses>
 		<license/>
